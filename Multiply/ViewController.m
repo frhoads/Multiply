@@ -9,6 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    __weak IBOutlet UITextField *myNumber;
+    __weak IBOutlet UILabel *myMultiplier;
+    __weak IBOutlet UILabel *myAnswer;
+}
 
 @end
 
@@ -18,6 +23,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)onCalculateButtonPressed:(id)sender
+{
+    int i = [myNumber.text intValue];
+    int m = [myMultiplier.text intValue];
+    int a = i * m;
+    NSString *intString = [NSString stringWithFormat:@"%i", a];
+    myAnswer.text = intString;
 }
 
 - (void)didReceiveMemoryWarning
