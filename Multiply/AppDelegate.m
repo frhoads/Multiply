@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  Multiply
 //
-//  Created by Kagan Riedel on 1/7/14.
-//  Copyright (c) 2014 Kagan Riedel. All rights reserved.
+//  Created by Fletcher Rhoads on 1/7/14.
+//  Copyright (c) 2014 Fletcher Rhoads. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [CheckMate initializeFramework:@"2723ca269a449911d83aecff1f916592"];
+    [CheckMate initializeFramework:@"0c405b81c80bef0dc15667cc59c73286"];
     // Override point for customization after application launch.
     return YES;
 }
